@@ -26,10 +26,11 @@ public class PropertyTest
     
     @Test
     public void testConstructor(){
-    
+        Property property= new Property("",1.0);
         Property property1= new Property("T3 Monte Belo",150000.0);
-        assertEquals(150000.0,property1.getPrice());
-        assertEquals("T3 Monte Belo",property1.getDescription());
+        
+        assertEquals(1.0,property.getPrice(), 0.0);
+        assertEquals("",property.getDescription());
     
     
     

@@ -22,21 +22,21 @@ public class Property {
     public Property(String description, double price) {
         this.description=description;
         this.price=price;
-        this.id=0;
+        this.id=++numberOfProperties;
     }
 
     /**
      * Id selector.
      */
     public int getId() {
-        return 0;
+        return this.id;
     }
 
     /**
      * Description selector.
      */
     public String getDescription() {
-        return null;
+        return this.description;
     }
 
     /**
@@ -48,7 +48,7 @@ public class Property {
         if(description!=null){
             this.description=description;
         }else{
-            this.description="null";
+            this.description=null;
         }
         
     }
@@ -57,7 +57,7 @@ public class Property {
      * Price selector.
      */
     public double getPrice() {
-        return 0.0;
+        return this.price;
     }
     
     /**
