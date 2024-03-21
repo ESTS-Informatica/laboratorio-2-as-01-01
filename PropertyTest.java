@@ -32,10 +32,13 @@ public class PropertyTest
         assertEquals(1.0,property.getPrice(), 0.0);
         assertEquals("",property.getDescription());
     
+  
+    }
     
-    
-    
-    
+    @Test
+    public void testToString(){
+        Property property1= new Property("T3 Monte Belo",150000.0);
+        assertEquals("Descricao:T3 Monte Belo",property1.toString());
     
     }
     
